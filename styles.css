@@ -1343,19 +1343,19 @@ body {
   z-index: 40;
   width: 56px;
   height: 56px;
-  background: var(--gradient-primary);
+  background: #25D366;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 32px rgba(0, 102, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.5);
   animation: bounce 2.5s ease-in-out infinite;
   text-decoration: none;
   transition: var(--transition);
 }
 
 .floating-cta:hover {
-  box-shadow: 0 12px 48px rgba(0, 102, 255, 0.7);
+  box-shadow: 0 12px 48px rgba(37, 211, 102, 0.7);
   transform: scale(1.1);
 }
 
