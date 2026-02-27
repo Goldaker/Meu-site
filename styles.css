@@ -143,10 +143,16 @@ body {
   object-fit: contain;
 }
 
+.floating-whatsapp-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 @media (max-width: 768px) {
-  .whatsapp-icon {
-    width: 8px;
-    height: 8px;
+  .floating-whatsapp-icon {
+    width: 14px;
+    height: 14px;
   }
 }
 
