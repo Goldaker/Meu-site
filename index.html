@@ -1,118 +1,483 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MGTech</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Work+Sans:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="grain-overlay" aria-hidden="true"></div>
-    <header class="hero shell">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <img
-            class="brand-logo"
-            src="Images/Logo_default.jpeg""
-            alt="Logo da MGTech"
-            loading="lazy"
-          />
-          <span class="hero-note">Tecnologia acessível para negócios reais</span>
-          <h1>Sites e sistemas de estoque para quem quer vender sem complicação.</h1>
-          <p>
-            Eu ajudo pequenos negócios a terem presença online e controle básico de
-            estoque, com ferramentas claras, humanas e feitas sob medida.
-          </p>
-          <div class="hero-actions">
-            <a
-              class="cta whatsapp"
-              href="https://wa.me/5547991542105?text=Quero%20um%20site%20simples"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Falar no WhatsApp
-            </a>
-            <span>Respondo no mesmo dia 🎯🪓</span>
-          </div>
-        </div>
-        <div class="hero-gallery">
-          <img
-            class="hero-photo primary"
-            src="Images/Barbearia.png"
-            alt="Site criado para uma barbearia local"
-            loading="lazy"
-          />
-          <img
-            class="hero-photo secondary"
-            src="Images/Nosso%20sistema%20de%20estoque.png"
-            alt="Tela do sistema de estoque direto"
-            loading="lazy"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GTech Sistemas - Plataforma premium de gestão e presença online para negócios em Blumenau. Site profissional + Sistema de estoque. Tecnologia moderna, suporte direto." />
+  <meta name="theme-color" content="#0066FF" />
+  <meta name="color-scheme" content="dark" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>GTech Sistemas | Plataforma Premium de Gestão para Negócios</title>
+  <link rel="icon" href="Images/Logo_default.jpeg" type="image/jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- BACKGROUND EFFECTS -->
+  <div class="background-glow grad-1"></div>
+  <div class="background-glow grad-2"></div>
+  <div class="grid-background" aria-hidden="true"></div>
+
+  <!-- SKIP LINK -->
+  <a href="#main" class="skip-link">Pular para conteúdo principal</a>
+
+  <!-- HEADER/NAVBAR -->
+  <header class="navbar" role="banner">
+    <div class="container navbar-container">
+      <!-- Brand -->
+      <div class="navbar-brand">
+        <img src="Images/ChatGPT Image 26 de fev. de 2026, 23_47_05.png" alt="GTech Sistemas" class="navbar-logo" loading="lazy" width="48" height="48" />
+        <div class="brand-text">
+          <h1 class="brand-name">GTech</h1>
+          <p class="brand-subtitle">SISTEMAS</p>
         </div>
       </div>
-    </header>
 
-    <main>
-      <section class="services shell">
-        <article>
-          <h2>Site claro</h2>
-          <p>
-            Página leve, com informações diretas, agendamento simples e conteúdo
-            fácil de atualizar.
-          </p>
-        </article>
-        <article>
-          <h2>Estoque direto</h2>
-          <p>
-            Sistema enxuto para registrar entradas, saídas e alertas básicos sem
-            painéis confusos.
-          </p>
-        </article>
-      </section>
+      <!-- Menu Hambúrguer Mobile -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
 
-      <section class="proof shell">
-        <div>
-          <h3>Como trabalho</h3>
-          <p>
-            Converso sobre o dia a dia do negócio, desenho o fluxo ideal e
-            entrego tudo pronto com uma explicação rápida por vídeo.
-          </p>
-        </div>
+      <!-- Navigation -->
+      <nav class="nav-menu" id="navMenu" aria-label="Navegação principal">
         <ul>
-          <li>
-            <strong>1 semana</strong>
-            <span>prazo médio</span>
-          </li>
-          <li>
-            <strong>Sem mensalidade</strong>
-            <span>você só paga quando precisa</span>
-          </li>
-          <li>
-            <strong>Suporte direto</strong>
-            <span>falo pelo WhatsApp</span>
-          </li>
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#como-funciona">Como Funciona</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
-      </section>
+      </nav>
 
-      <section class="cta-final shell">
-        <p>
-          Vamos criar um site ou um estoque que cabem na sua rotina e bolso?
-        </p>
-        <a
-          class="cta whatsapp"
-          href="https://wa.me/5547991542105"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Chamar no WhatsApp agora
-        </a>
-      </section>
-    </main>
-  </body>
+      <!-- CTA Header -->
+      <a href="https://wa.me/5547991542105?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20GTech" class="btn btn-header whatsapp-link" target="_blank" rel="noopener noreferrer">
+        <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" loading="lazy" />
+        Falar agora
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" role="banner">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h2 class="hero-title">
+            Leve seu negócio ao próximo nível com <span class="gradient-text">tecnologia premium</span>
+          </h2>
+          
+          <p class="hero-subtitle">
+            Site profissional + Sistema de gestão inteligente. Tudo que você precisa para crescer em Blumenau, SC.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="https://wa.me/5547991542105?text=Tenho%20interesse%20em%20colocar%20meu%20neg%C3%B3cio%20online.%20Qual%20o%20melhor%20plano%20para%20mim%3F" class="btn btn-primary whatsapp-link" target="_blank" rel="noopener noreferrer">
+              <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" loading="lazy" />
+              Comece agora
+            </a>
+            
+            <a href="#planos" class="btn btn-secondary">
+              Ver planos
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-badge">
+              <span class="check-icon">✓</span>
+              Suporte direto 24/7
+            </div>
+            <div class="trust-badge">
+              <span class="check-icon">✓</span>
+              Sem contrato longo
+            </div>
+            <div class="trust-badge">
+              <span class="check-icon">✓</span>
+              Cancelamento livre
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-graphic">
+            <div class="graphic-element element-1"></div>
+            <div class="graphic-element element-2"></div>
+            <div class="graphic-element element-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOLUCOES SECTION ===== -->
+    <section id="solucoes" class="solucoes">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nossas Soluções</h2>
+          <p>Combinadas para potencializar seu negócio</p>
+        </div>
+
+        <div class="solutions-grid">
+          <!-- Solução 1 -->
+          <div class="solution-card glass-card">
+            <div class="solution-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>Site Profissional</h3>
+            <p>Presença online que converte. Otimizado para Google, responsivo em todos os celulares.</p>
+            <ul class="features-list">
+              <li>✓ Design moderno e premium</li>
+              <li>✓ Otimização SEO completa</li>
+              <li>✓ 100% responsivo mobile</li>
+              <li>✓ CMS intuitivo</li>
+            </ul>
+            <span class="price-tag">A partir de R$ 1.000</span>
+          </div>
+
+          <!-- Solução 2 -->
+          <div class="solution-card glass-card featured">
+            <div class="popular-badge">MAIS POPULAR</div>
+            <div class="solution-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 11l3 3L22 4"></path>
+                <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3>Sistema de Estoque</h3>
+            <p>Gerencie seu estoque de forma inteligente com relatórios e alertas automáticos.</p>
+            <ul class="features-list">
+              <li>✓ Controle em tempo real</li>
+              <li>✓ Alertas automáticos</li>
+              <li>✓ Relatórios detalhados</li>
+              <li>✓ Integração com site</li>
+            </ul>
+            <span class="price-tag">A partir de R$ 97/mês</span>
+          </div>
+
+          <!-- Solução 3 -->
+          <div class="solution-card glass-card">
+            <div class="solution-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Segurança Premium</h3>
+            <p>Seus dados protegidos com certificado SSL, backups automáticos e suporte contínuo.</p>
+            <ul class="features-list">
+              <li>✓ SSL/TLS criptografado</li>
+              <li>✓ Backups automáticos</li>
+              <li>✓ Monitoramento 24/7</li>
+              <li>✓ Suporte por WhatsApp</li>
+            </ul>
+            <span class="price-tag">Incluído no plano</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PLANOS SECTION ===== -->
+    <section id="planos" class="planos">
+      <div class="container">
+        <div class="section-header">
+          <h2>Planos Transparentes</h2>
+          <p>Escolha o que faz sentido para seu negócio</p>
+        </div>
+
+        <div class="plans-grid">
+          <!-- Plano 1 -->
+          <div class="plan-card">
+            <div class="plan-header">
+              <h3>Site Profissional</h3>
+              <p class="plan-description">Presença online consolidada</p>
+            </div>
+
+            <div class="plan-price">
+              <span class="currency">R$</span>
+              <span class="amount">1.000</span>
+              <span class="period">uma única vez</span>
+            </div>
+
+            <ul class="plan-features">
+              <li>✓ Site sob medida</li>
+              <li>✓ Otimizado (SEO + Mobile)</li>
+              <li>✓ Certificado SSL</li>
+              <li>✓ Atualizações com custo acessível</li>
+              <li>✓ Suporte por WhatsApp</li>
+            </ul>
+
+            <a href="https://wa.me/5547991542105?text=Gostaria%20de%20investir%20em%20um%20Site%20Profissional%20para%20meu%20neg%C3%B3cio" class="btn btn-secondary btn-full whatsapp-link" target="_blank" rel="noopener noreferrer">
+              <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" loading="lazy" />
+              Contratar
+            </a>
+          </div>
+
+          <!-- Plano 2 -->
+          <div class="plan-card featured-plan">
+            <div class="badge-featured">RECOMENDADO</div>
+            <div class="plan-header">
+              <h3>Combo Premium</h3>
+              <p class="plan-description">Site + Sistema completo</p>
+            </div>
+
+            <div class="plan-price">
+              <span class="currency">A partir de</span>
+              <span class="amount">R$ 2.000</span>
+              <span class="period">site + R$ 97/mês</span>
+            </div>
+
+            <ul class="plan-features">
+              <li>✓ Site profissional</li>
+              <li>✓ Sistema de estoque</li>
+              <li>✓ Integração completa</li>
+              <li>✓ Certificado SSL</li>
+              <li>✓ Suporte prioritário</li>
+              <li>✓ Relatórios automáticos</li>
+            </ul>
+
+            <a href="https://wa.me/5547991542105?text=Estou%20interessado%20no%20Combo%20Premium%20da%20GTech%20Sistemas" class="btn btn-primary btn-full whatsapp-link" target="_blank" rel="noopener noreferrer">
+              <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" loading="lazy" />
+              Escolher plano
+            </a>
+          </div>
+
+          <!-- Plano 3 -->
+          <div class="plan-card">
+            <div class="plan-header">
+              <h3>Sistema Stand-alone</h3>
+              <p class="plan-description">Só o sistema de estoque</p>
+            </div>
+
+            <div class="plan-price">
+              <span class="currency">A partir de</span>
+              <span class="amount">R$ 97</span>
+              <span class="period">/mês + implementação</span>
+            </div>
+
+            <ul class="plan-features">
+              <li>✓ Gestão de estoque</li>
+              <li>✓ Alertas automáticos</li>
+              <li>✓ Relatórios diários</li>
+              <li>✓ Acesso desktop</li>
+              <li>✓ Adaptável ao seu sistema</li>
+            </ul>
+
+            <a href="https://wa.me/5547991542105?text=Preciso%20de%20um%20sistema%20para%20controlar%20meu%20estoque.%20Como%20funciona%3F" class="btn btn-secondary btn-full whatsapp-link" target="_blank" rel="noopener noreferrer">
+              <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" loading="lazy" />
+              Interessado
+            </a>
+          </div>
+        </div>
+
+        <div class="plans-info">
+          <p>💡 Todos os planos incluem: <strong>suporte direto via WhatsApp</strong>, implementação e configuração.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESSO SECTION ===== -->
+    <section id="como-funciona" class="processo">
+      <div class="container">
+        <div class="section-header">
+          <h2>Como Funciona</h2>
+          <p>Seu caminho para o sucesso digital em 3 passos</p>
+        </div>
+
+        <div class="steps-container">
+          <!-- Step 1 -->
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Conversa Inicial</h3>
+            <p>Você descreve seu negócio e objetivos. Falamos pelo WhatsApp, sem pressa.</p>
+            <span class="step-time">15-20 min</span>
+          </div>
+
+          <div class="step-connector">
+            <span class="connector-line"></span>
+            <span class="connector-dot">→</span>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Desenvolvimento</h3>
+            <p>Criamos seu site e/ou sistema conforme combinado. Você acompanha o progresso.</p>
+            <span class="step-time">7-14 dias</span>
+          </div>
+
+          <div class="step-connector">
+            <span class="connector-line"></span>
+            <span class="connector-dot">→</span>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Entrega + Suporte</h3>
+            <p>Seu site/sistema ativo. Treinamento completo e suporte contínuo para crescer.</p>
+            <span class="step-time">Pronto para usar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIFERENCIAIS SECTION ===== -->
+    <section class="diferenciais">
+      <div class="container">
+        <div class="section-header">
+          <h2>Por que escolher GTech</h2>
+          <p>Somos diferentes porque entendemos seu negócio</p>
+        </div>
+
+        <div class="diferenciais-grid">
+          <div class="diferencial-card glass-card">
+            <div class="diferencial-icon">👥</div>
+            <h3>Atendimento Direto</h3>
+            <p>Fala comigo, não com máquina. Resolvemos juntos via WhatsApp, áudio ou ligação.</p>
+          </div>
+
+          <div class="diferencial-card glass-card">
+            <div class="diferencial-icon">📍</div>
+            <h3>Empresa Local</h3>
+            <p>Somos de Blumenau. Entendemos a realidade do comércio local. Seus clientes são nossos vizinhos.</p>
+          </div>
+
+          <div class="diferencial-card glass-card">
+            <div class="diferencial-icon">💰</div>
+            <h3>Transparência Total</h3>
+            <p>Sem taxa escondida. Preço fixo, sem surpresa. Você sabe exatamente o que paga.</p>
+          </div>
+
+          <div class="diferencial-card glass-card">
+            <div class="diferencial-icon">🚀</div>
+            <h3>Rápido e Eficiente</h3>
+            <p>Site pronto em dias, não meses. Você começa a vender online sem esperar.</p>
+          </div>
+
+          <div class="diferencial-card glass-card">
+            <div class="diferencial-icon">🔓</div>
+            <h3>Liberdade Total</h3>
+            <p>Sem contrato longo. Cancele quando quiser. Mas seus resultados falarão por si.</p>
+          </div>
+
+          <div class="diferencial-card glass-card">
+            <div class="diferencial-icon">⚡</div>
+            <h3>Tecnologia Premium</h3>
+            <p>Plataform moderna, segura e escalável. Cresce com seu negócio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL SECTION ===== -->
+    <section id="contato" class="cta-final">
+      <div class="container">
+        <div class="cta-final-content">
+          <h2>Pronto para crescer?</h2>
+          <p>Não espere mais. Vamos colocar seu negócio online hoje mesmo. Converse comigo sobre seus objetivos.</p>
+          
+          <div class="cta-final-buttons">
+            <a href="https://wa.me/5547991542105?text=Estou%20pronto%20para%20levar%20meu%20neg%C3%B3cio%20ao%20pr%C3%B3ximo%20n%C3%ADvel.%20Vamos%20conversar%3F" class="btn btn-primary btn-large whatsapp-link" target="_blank" rel="noopener noreferrer">
+              <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" loading="lazy" />
+              Iniciar conversa
+            </a>
+          </div>
+
+          <p class="cta-final-note">Respondo em minutos • Sem compromisso • Avaliação gratuita</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>GTech Sistemas</h3>
+          <p>Tecnologia premium para negócios em Blumenau crescerem online.</p>
+          <p class="footer-location">📍 Blumenau, SC</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Links úteis</h4>
+          <ul>
+            <li><a href="#solucoes">Soluções</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#como-funciona">Como Funciona</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contato</h4>
+          <p>
+            <a href="https://wa.me/5547991542105" class="contact-link whatsapp-link" target="_blank" rel="noopener noreferrer">
+              <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" loading="lazy" />
+              (47) 99154-2105
+            </a>
+          </p>
+          <p class="contact-info">Resposta rápida. Sem robôs.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GTech Sistemas. Todos os direitos reservados.</p>
+        <p>Desenvolvido com <span class="heart">❤️</span> para negócios crescerem</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING CTA (Mobile only) -->
+  <a href="https://wa.me/5547991542105?text=Quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20GTech%20Sistemas" class="floating-cta whatsapp-link" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
+    <img src="Images/whatsapp.png" alt="WhatsApp" class="floating-whatsapp-icon" loading="lazy" />
+  </a>
+
+  <!-- Menu Script -->
+  <script>
+    (function() {
+      'use strict';
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+      
+      menuToggle?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = navMenu.classList.toggle('active');
+        menuToggle.setAttribute('aria-expanded', isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      });
+
+      document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.navbar') && navMenu.classList.contains('active')) {
+          navMenu.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+          navMenu.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+          menuToggle.focus();
+        }
+      });
+    })();
+  </script>
+</body>
 </html>
