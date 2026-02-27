@@ -149,14 +149,15 @@ body {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 102, 255, 0.1);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 0;
 }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
-  gap: 1rem;
+  padding: 1rem 2rem;
+  gap: 3rem;
 }
 
 .navbar-brand {
@@ -164,11 +165,12 @@ body {
   align-items: center;
   gap: 0.8rem;
   flex-shrink: 0;
+  margin-right: 2rem;
 }
 
 .navbar-logo {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 8px;
   background: rgba(0, 102, 255, 0.1);
   padding: 4px;
@@ -180,7 +182,7 @@ body {
 }
 
 .brand-name {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 800;
   letter-spacing: -0.5px;
 }
@@ -425,7 +427,7 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  padding: 4rem 0;
+  padding: 8rem 0;
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -435,7 +437,7 @@ body {
 .hero-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
+  gap: 7rem;
   align-items: center;
 }
 
@@ -565,7 +567,7 @@ body {
 /* ===== SECTION HEADER ===== */
 .section-header {
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 7rem;
 }
 
 .section-header h2 {
@@ -582,18 +584,18 @@ body {
 
 /* ===== SOLUCOES SECTION ===== */
 .solucoes {
-  padding: 5rem 0;
+  padding: 12rem 0;
   position: relative;
 }
 
 .solutions-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .solution-card {
-  padding: 2rem;
+  padding: 4rem;
   border-radius: 12px;
   position: relative;
 }
@@ -687,14 +689,14 @@ body {
 
 /* ===== PLANOS SECTION ===== */
 .planos {
-  padding: 5rem 0;
+  padding: 12rem 0;
   position: relative;
 }
 
 .plans-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.5rem;
+  gap: 5.5rem;
   margin-bottom: 3rem;
 }
 
@@ -702,7 +704,7 @@ body {
   background: rgba(26, 26, 36, 0.8);
   border: 1px solid rgba(0, 102, 255, 0.1);
   border-radius: 12px;
-  padding: 2.5rem;
+  padding: 4.5rem;
   position: relative;
   backdrop-filter: blur(10px);
   transition: var(--transition);
@@ -800,14 +802,14 @@ body {
 
 /* ===== PROCESSO SECTION ===== */
 .processo {
-  padding: 5rem 0;
+  padding: 12rem 0;
   position: relative;
 }
 
 .steps-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
+  gap: 7rem;
 }
 
 .step {
@@ -860,18 +862,18 @@ body {
 
 /* ===== DIFERENCIAIS SECTION ===== */
 .diferenciais {
-  padding: 5rem 0;
+  padding: 12rem 0;
   position: relative;
 }
 
 .diferenciais-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 .diferencial-card {
-  padding: 2rem;
+  padding: 4rem;
   border-radius: 12px;
   text-align: center;
 }
@@ -896,7 +898,7 @@ body {
 
 /* ===== CTA FINAL SECTION ===== */
 .cta-final {
-  padding: 4rem 0;
+  padding: 10rem 0;
   position: relative;
   background: rgba(0, 102, 255, 0.05);
   border-top: 1px solid rgba(0, 102, 255, 0.1);
