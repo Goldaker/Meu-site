@@ -67,6 +67,7 @@
     <section class="hero" role="banner">
       <div class="container hero-container">
         <div class="hero-content">
+          <p style="font-size: 0.95rem; color: #B8BAC2; margin-bottom: 1rem; font-weight: 600; letter-spacing: 0.5px;">Para negócios que querem vender mais em Blumenau</p>
           <h2 class="hero-title">
             Seu negócio online em <span class="gradient-text">menos de 2 semanas</span>
           </h2>
@@ -86,7 +87,7 @@
             </a>
           </div>
 
-          <p class="cta-microcopy">💬 Respondo em minutos • Sem compromisso • Atendimento 100% humano</p>
+          <p class="cta-microcopy">‌❌ Respondo em minutos • Sem compromisso • Atendimento 100% humano • Demo gratuita</p>
 
           <div class="hero-trust">
             <div class="trust-badge">
@@ -194,10 +195,13 @@
     <div class="container">
       <div class="cta-inline">
         <p>Pronto para ver essas soluções em ação no seu negócio?</p>
-        <a href="https://wa.me/5547991542105?text=Gostaria%20de%20entender%20como%20integrar%20site%20%2B%20sistema%20no%20meu%20neg%C3%B3cio" class="btn btn-primary-inline whatsapp-link" target="_blank" rel="noopener noreferrer">
-          <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" loading="lazy" />
-          Agendar demonstração
-        </a>
+        <div>
+          <a href="https://wa.me/5547991542105?text=Gostaria%20de%20entender%20como%20integrar%20site%20%2B%20sistema%20no%20meu%20neg%C3%B3cio" class="btn btn-primary-inline whatsapp-link" target="_blank" rel="noopener noreferrer">
+            <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" loading="lazy" />
+            Agendar demonstração
+          </a>
+          <p style="font-size: 0.8rem; color: #7A7D88; margin-top: 0.5rem; text-align: center;">Demo rápida e sem compromisso</p>
+        </div>
       </div>
     </div>
 
@@ -207,6 +211,7 @@
         <div class="section-header">
           <h2>Planos Simples e Diretos</h2>
           <p>Escolha o caminho que faz sentido para seu negócio. Sem pegadinha.</p>
+          <p style="font-size: 0.9rem; color: #B8BAC2; margin-top: 1.5rem;">Escolha o plano ideal e comece a vender ainda essa semana</p>
         </div>
 
         <div class="plans-grid">
@@ -235,6 +240,7 @@
               <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" loading="lazy" />
               Contratar
             </a>
+            <p style="font-size: 0.8rem; color: #7A7D88; text-align: center; margin-top: 0.8rem;">Resposta em minutos • Sem compromíso</p>
           </div>
 
           <!-- Plano 2 -->
@@ -264,6 +270,7 @@
               <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" loading="lazy" />
               Escolher plano
             </a>
+            <p style="font-size: 0.8rem; color: #7A7D88; text-align: center; margin-top: 0.8rem;">Plano mais solicitado • Implementação inclusa</p>
           </div>
 
           <!-- Plano 3 -->
@@ -291,6 +298,7 @@
               <img src="Images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon" loading="lazy" />
               Interessado
             </a>
+            <p style="font-size: 0.8rem; color: #7A7D88; text-align: center; margin-top: 0.8rem;">Orçamento personalizado • Sem taxa de setup</p>
           </div>
         </div>
 
@@ -415,7 +423,7 @@
             </a>
           </div>
 
-          <p class="cta-final-note">Respondo em minutos • Avaliação gratuita • Sem compromisso</p>
+          <p class="cta-final-note">Respondo em minutos • Avaliação gratuita • Sem compromisso • Sem contrato longo • Cancelamento livre</p>
         </div>
       </div>
     </section>
@@ -455,7 +463,7 @@
 
       <div class="footer-bottom">
         <p>&copy; 2026 GTech Sistemas. Todos os direitos reservados.</p>
-        <p>Desenvolvido com <span class="heart">❤️</span> para negócios crescerem</p>
+        <p>Desenvolvido com <span class="força">💪</span> para negócios crescerem</p>
       </div>
     </div>
   </footer>
@@ -472,6 +480,7 @@
       const menuToggle = document.getElementById('menuToggle');
       const navMenu = document.getElementById('navMenu');
       
+      // Mobile menu toggle
       menuToggle?.addEventListener('click', (e) => {
         e.stopPropagation();
         const isOpen = navMenu.classList.toggle('active');
@@ -479,6 +488,7 @@
         document.body.style.overflow = isOpen ? 'hidden' : '';
       });
 
+      // Close nav menu on link click
       document.querySelectorAll('.nav-menu a').forEach(link => {
         link.addEventListener('click', () => {
           navMenu.classList.remove('active');
@@ -487,6 +497,7 @@
         });
       });
 
+      // Close on outside click
       document.addEventListener('click', (e) => {
         if (!e.target.closest('.navbar') && navMenu.classList.contains('active')) {
           navMenu.classList.remove('active');
@@ -495,6 +506,7 @@
         }
       });
 
+      // Close on ESC key
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && navMenu.classList.contains('active')) {
           navMenu.classList.remove('active');
